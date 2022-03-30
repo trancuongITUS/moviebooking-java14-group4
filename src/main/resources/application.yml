@@ -10,7 +10,7 @@ spring:
   jackson:
     serialization:      fail-on-empty-beans: false
   flyway:
-    url: jdbc:postgresql://localhost:5432/movie-booking
+    url: jdbc:postgresql://localhost:5432/movie-booking&ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory
     user: postgres
     password: admin
     driver-class-name: org.postgresql.Driver
