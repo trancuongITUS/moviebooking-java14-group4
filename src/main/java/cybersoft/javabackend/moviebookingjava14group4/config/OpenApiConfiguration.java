@@ -5,6 +5,7 @@ import org.springframework.context.annotation.Configuration;
 
 import io.swagger.v3.oas.models.ExternalDocumentation;
 import io.swagger.v3.oas.models.OpenAPI;
+import io.swagger.v3.oas.models.info.Contact;
 import io.swagger.v3.oas.models.info.Info;
 import io.swagger.v3.oas.models.info.License;
 
@@ -19,10 +20,14 @@ public class OpenApiConfiguration {
 						.description("Movie Booking for Cybersoft Education!")
 						.version("v.0.0.1")
 						.license(new License()
-								.name("Apache 2.0").url("http://springdoc.org")))
+								.name("No License")
+								.url("https://www.facebook.com/profile.php?id=100008015554824"))
+						.contact(new Contact()
+								.email("trancuongitus@gmail.com")
+								.name("Tran Vu Viet Cuong - Group4 CRM")))
 				.externalDocs(new ExternalDocumentation()
-						.description("Movie Booking Documentation")
-						.url("https://www.facebook.com/profile.php?id=100008015554824")); //sửa lại sau
-						
+						.description("Spring Documentation")
+						.url("https://docs.spring.io/spring-framework/docs/current/reference/html/"));
+				
 	}
 }
