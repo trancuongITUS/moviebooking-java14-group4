@@ -6,8 +6,8 @@ CREATE TABLE public.mb_role
 	
 	created_at timestamp without time zone,
 	updated_at timestamp without time zone,
-	created_by int, -- khóa ngoại tới user
-	updated_by int, -- khóa ngoại tới user
+	created_by varchar(255),
+	updated_by varchar(255),
 	
 	CONSTRAINT role_pKey PRIMARY KEY (role_id)
 );
@@ -24,8 +24,8 @@ CREATE TABLE public.mb_users
 	
 	created_at timestamp without time zone,
 	updated_at timestamp without time zone,
-	created_by int, -- khóa ngoại tới user
-	updated_by int, -- khóa ngoại tới user
+	created_by varchar(255),
+	updated_by varchar(255),
 	
 	CONSTRAINT users_pKey PRIMARY KEY (usr_id)
 );
@@ -44,8 +44,8 @@ CREATE TABLE public.mb_films
 	
 	created_at timestamp without time zone,
 	updated_at timestamp without time zone,
-	created_by int, -- khóa ngoại tới user
-	updated_by int, -- khóa ngoại tới user
+	created_by varchar(255),
+	updated_by varchar(255),
 	
 	CONSTRAINT films_pKey PRIMARY KEY (film_id)
 );
@@ -59,8 +59,8 @@ CREATE TABLE public.mb_cinemaGroups
 	
 	created_at timestamp without time zone,
 	updated_at timestamp without time zone,
-	created_by int, -- khóa ngoại tới user
-	updated_by int, -- khóa ngoại tới user
+	created_by varchar(255),
+	updated_by varchar(255),
 	
 	CONSTRAINT cineGrs_pKey PRIMARY KEY (cg_id)
 );
@@ -74,8 +74,8 @@ CREATE TABLE public.mb_cinemas
 	
 	created_at timestamp without time zone,
 	updated_at timestamp without time zone,
-	created_by int, -- khóa ngoại tới user
-	updated_by int, -- khóa ngoại tới user
+	created_by varchar(255),
+	updated_by varchar(255),
 	
 	CONSTRAINT cine_pKey PRIMARY KEY (cine_id)
 );
@@ -97,8 +97,8 @@ CREATE TABLE public.mb_showtimes
 	
 	created_at timestamp without time zone,
 	updated_at timestamp without time zone,
-	created_by int, -- khóa ngoại tới user
-	updated_by int, -- khóa ngoại tới user
+	created_by varchar(255),
+	updated_by varchar(255),
 	
 	CONSTRAINT showtimes_pKey PRIMARY KEY (st_id)
 );
@@ -112,8 +112,8 @@ CREATE TABLE public.mb_ticketType
 	
 	created_at timestamp without time zone,
 	updated_at timestamp without time zone,
-	created_by int, -- khóa ngoại tới user
-	updated_by int, -- khóa ngoại tới user
+	created_by varchar(255),
+	updated_by varchar(255),
 	
 	CONSTRAINT ticketTypes PRIMARY KEY (tkt_id)
 );
@@ -137,8 +137,8 @@ CREATE TABLE public.mb_history
 	
 	created_at timestamp without time zone,
 	updated_at timestamp without time zone,
-	created_by int, -- khóa ngoại tới user
-	updated_by int, -- khóa ngoại tới user
+	created_by varchar(255),
+	updated_by varchar(255),
 	
 	CONSTRAINT history_pKey PRIMARY KEY (his_id)
 );
